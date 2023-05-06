@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: blanchedalmond;
+}
+
+.container{
+    background: sandybrown;
+    display: flex;
+    height: 20vh;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+}
+.div-logo{
+    box-sizing: border-box;
+}
+.div-logo > img{
+    width:  20vw;
+    height: 20vh;
+
+}
+.div-busca{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+.div-busca > label{
+
+}
+.div-busca > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 300px 10px 10px;
+    background-color: white;
+    color: black;
+    font-size: 12pt;
+    box-shadow: 0px 1px 5px black;
+    outline: none;
+    box-sizing: border-box;
+}
+.btn-busca{
+    margin: 2px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-weight: 200;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.div-cadastro{
+    box-sizing: border-box;
+}
+.div-carrinho{  
+    box-sizing: border-box;
+}
+.box-left{
+    display: flex;
+    justify-content: center;
+}
+.box-right{
+    display: flex;
+    width: 100%;
+    margin-top: 2rem;
+    justify-content: center;
+}
+.box-int{
+    display: flex;
+    justify-content: center ;
+    flex-direction: column;
+}
+footer{
+}
+
+@media screen and (max-width:1300px){
+    .container{
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .div-logo{
+        max-width: 100%;
+    }
+    .div-cadastro{
+        box-sizing: border-box;
+        margin-left: 10px;
+    }
+    .div-carrinho{
+        margin-left: 10px;
+    }
+    .box-int{
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 5rem;
+    }
+    .box-right{
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+    }
+    .box-left{
+        justify-content: center;
+        margin: auto;
+        align-items: center;
+    }
+
+@media screen and (max-width: 950px){
+    .div-busca{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .container{
+        flex-direction: row;
+        width: auto;
+    }
+    .div-logo img{
+        width: auto;
+    }
+    .box-left img{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 400px){
+    .div-carrinho{
+        margin-left: 5px;
+    }
+    .div-cadastro{
+        margin: 5px;
+    }
+}
+}

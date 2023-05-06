@@ -1,0 +1,2 @@
+<link href="../../public/css/bootstrap/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+        <!-- <script src="./vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script> -->

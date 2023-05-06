@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+.principal{
+    width: 100vw;
+    height: 100vh;
+    background-color: sandybrown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-left{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box-left > h1{
+    font-size: 3vw;
+    color: aliceblue;
+}
+.box-right{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: rgb(222, 148, 83);
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px black;
+}
+.card-login > h1{
+    color: whitesmoke;
+    font-weight: 600;
+    margin: 0;
+}
+.text-field{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px;
+}
+.text-field > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: white;
+    color: black;
+    font-size: 12pt;
+    box-shadow: 0px 1px 5px black;
+    outline: none;
+    box-sizing: border-box;
+}
+.text-field > label{
+    color: black;
+    font-size: 15pt;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.text-field > input::placeholder{
+    color: black(202, 195, 195);
+}
+.btn-login{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 0px 8px 40px -21px whitesmoke;
+}
+
+.bt-inicio{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.logo-login{
+    width: 35vw;
+}
+
+@media screen and (max-width: 950px){
+
+    .card-login{
+        width: 85%;
+    }
+    
+}
+@media screen and (max-width: 600px){
+    .principal{
+        flex-direction: column;
+    }
+    .box-left > h1{
+        display: none;
+    }
+    .box-left{
+        width: 100%;
+        height: auto;
+    }
+    .box-right{
+        width: 100%;
+        height: auto;
+    }
+    .logo-login{
+        width: 50vw;
+    }
+    .card-login{
+        width: 90%;
+    }
+}
